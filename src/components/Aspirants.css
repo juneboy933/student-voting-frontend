@@ -1,0 +1,91 @@
+.aspirants {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar button {
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.aspirant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.aspirant-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aspirant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.aspirant-card img{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.aspirant-card h3{
+    margin: 0 0 8px;
+}
+
+.aspirant-card p{
+    margin: 0 0 12px;
+    font-weight: bold;
+}
+
+.aspirant-card button{
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aspirant-card button:hover {
+    background-color: #135ba1;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #c3e6cb;
+    font-weight: 500;
+    z-index: 999;
+    max-width: 300px;
+    box-shadow: 0 20px 8px rgba(0,0,0, 0.15);
+}
