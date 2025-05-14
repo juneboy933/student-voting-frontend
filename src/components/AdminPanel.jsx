@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './admin.css'
+import './Admin.css'
 
 const AdminPanel = () => {
     const [votes, setVotes] = useState([]);
