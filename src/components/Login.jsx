@@ -7,7 +7,7 @@ const Login = ({onLogin}) => {
 
     const handleLogin = async() => {
         try{
-        const res = await fetch("http://localhost:8000/login", {
+        const res = await fetch("https://student-voting-backend-1.onrender.com/login", {
             method: 'POST',
             headers: {"content-Type": "application/json"},
             body: JSON.stringify({studentID})

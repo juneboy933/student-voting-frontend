@@ -8,7 +8,7 @@ const AspirantList = ({ studentID, onLogout }) => {
 
     const fetchAspirants = async () => {
         try {
-            const res = await fetch("http://localhost:8000/aspirants");
+            const res = await fetch("https://student-voting-backend-1.onrender.com/aspirants");
             const data = await res.json();
             setAspirants(data);
         } catch (error) {
@@ -70,7 +70,7 @@ const AspirantList = ({ studentID, onLogout }) => {
        <div className='aspirant-container'>
        {aspirants.map((asp) => (
         <div key={asp.name + asp.position } className='aspirant-card'>
-            <img src={`http://localhost:8000/images/${asp.image}`} alt={asp.name}/>
+            <img src={`https://student-voting-backend-1.onrender.com/images/${asp.image}`} alt={asp.name}/>
             <h3>{asp.name}</h3>
             <p>Position: {asp.position}</p>
             {canVote ? (

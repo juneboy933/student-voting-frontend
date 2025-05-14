@@ -6,7 +6,7 @@ const AdminPanel = () => {
 
     const fetchData = async () => {
         try {
-            const res = await fetch('http://localhost:8000/tally');
+            const res = await fetch('https://student-voting-backend-1.onrender.com/tally');
             const data = await res.json();
             setVotes(data);
             // console.log(data);
