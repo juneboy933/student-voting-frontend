@@ -40,7 +40,7 @@ const AspirantList = ({ studentID, onLogout }) => {
 
     const handleVote = async(position, aspirantId) => {
        try {
-        const res = await fetch("http://localhost:8000/vote", {
+        const res = await fetch("https://student-voting-backend-1.onrender.com/vote", {
             method: "POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify({
